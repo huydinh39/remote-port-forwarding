@@ -90,17 +90,17 @@ EOF
 
 - Start Service
 ```
-sudo systemctl start ssh_tunnel.service
+sudo systemctl start ssh_tunnel
 ```
 
 - Check Status Service
 ```
-sudo systemctl status ssh_tunnel.service
+sudo systemctl status ssh_tunnel
 ```
 
 - Enable Service to Run On Boot
 ```
-sudo systemctl enable ssh_tunnel.service
+sudo systemctl enable ssh_tunnel
 ```
 
 ***
