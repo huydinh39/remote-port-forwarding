@@ -50,6 +50,7 @@ firewall-cmd --list-ports
 
 - Run following command and paste the Public Key into this file
 
+***Note: Please paste carefully, only add, not clear old content !!!***
 ```
 sudo vim ~/.ssh/authorized_keys
 ```
