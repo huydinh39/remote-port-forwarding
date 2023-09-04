@@ -62,9 +62,9 @@ sudo systemctl restart sshd
 **3. Create Service in systemd**
 - Let's change **HOST**, **HOST_PORT**, **USER**, **LOCAL_PORT** to suit your information before run following command
   + HOST: _IP Address your SSH Server (**192.168.100.100**)_
-  + HOST_PORT: _The port of your SSH Server (**2001**) (Unique)_
-  + USER: _The User you want to use to login to SSH Server (**root**)_
-  + LOCAL_PORT: _The port of servive on your Local Server, you want to mapping to Port of SSH Server (In this case, **Node-red** running on port **1880**)_
+  + HOST_PORT: _Port of your SSH Server (**2001**) (Unique)_
+  + USER: _User you want to use to login to SSH Server (**root**)_
+  + LOCAL_PORT: _Port of servive on your Local Server, you want to mapping to Port of SSH Server (In this case, **Node-red** running on port **1880**)_
 
 - Run following command (**after changed to suit your information**)
 ```
