@@ -46,7 +46,7 @@ firewall-cmd --list-ports
 
 - Copy Public Key after run command `cat ~/.ssh/id_rsa.pub`
 
-**2. Access SSH Server to paste the Public Key was copied above into authorized_keys file**
+**2. Access SSH Server (Centos7) to paste the Public Key was copied above into authorized_keys file**
 
 - Run following command and paste the Public Key into this file
 
