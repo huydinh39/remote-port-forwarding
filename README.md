@@ -66,9 +66,12 @@ sudo systemctl restart sshd
   + USER: _User you want to use to login to SSH Server (**root**)_
   + LOCAL_PORT: _Port of servive on your Local Server, you want to mapping to Port of SSH Server (In this case, **Node-red** running on port **1880**)_
 
-- Run following command (**after changed to suit your information**)
+- Run following command to create **ssh_tunnel.service** file
 ```
-sudo cat << EOF | sudo tee -a /etc/systemd/system/ssh_tunnel.service
+sudo nano /etc/systemd/system/ssh_tunnel.service
+```
+- Afterthat, paste following command to **ssh_tunnel.service** file (**after changed to suit your information**)
+```
 [Unit]
 Description=SSH Tunneling - Remote Port Forwarding
 After=network-online.target
@@ -86,7 +89,6 @@ RestartSec=10
 
 [Install]
 WantedBy=multi-user.target
-EOF
 ```
 
 - Start Service
